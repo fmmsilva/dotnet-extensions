@@ -1,0 +1,5 @@
+TestResults/
+DotNetExtensions/bin/
+DotNetExtensions/obj/
+DotNetExtensions.Test/bin/
+DotNetExtensions.Test/obj/
