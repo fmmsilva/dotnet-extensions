@@ -51,5 +51,15 @@ namespace DotNetExtensions
 
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
+
+
+        public static string Truncate(this string str, int length, string suffix = "...", string prefix = "")
+        {
+            if (str.Length > length)
+            {
+                str = str.Substring(0, length);
+            }
+            return prefix + str + suffix;
+        }
     }
 }

@@ -18,6 +18,13 @@ namespace DotNetExtensions.Test
             Assert.AreEqual(result, "aEiou");
         }
 
+        [TestMethod]
+        public void Truncate()
+        {
+            string result = "Felipe Mendonça".Truncate(6, "...");
+            Assert.AreEqual(result, "Felipe...");
+        }
+
 
         [TestMethod]
         public void Slugify()
